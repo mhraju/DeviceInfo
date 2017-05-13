@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/smartphones"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/Device"
+            android:icon="@drawable/smartphones"
+            android:title="Device" />
+    </group>
+
+    <group
+        android:id="@+id/android"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/OS"
+        android:icon="@drawable/android"
+        android:title="OS" />
+    </group>
+
+
+    <group
+        android:id="@+id/monitor"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/Screen"
+        android:icon="@drawable/monitor"
+        android:title="Screen" />
+    </group>
+
+
+    <group
+        android:id="@+id/sdcard"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/Memory"
+        android:icon="@drawable/sdcard"
+        android:title="Memory" />
+    </group>
+
+
+    <group
+        android:id="@+id/batteryicon"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/Battery"
+        android:icon="@drawable/batteryicon"
+        android:title="Battery" />
+    </group>
+
+
+
+  <!--  <group
+        android:id="@+id/information"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/information"
+            android:title="About" />
+    </group>-->
+
+
+<!--    <group
+        android:id="@+id/batteryicon"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/close"
+            android:icon="@drawable/batteryicon"
+            android:title="Battery" />
+    </group>
+    -->
+</menu>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Device Info</string>
+
+    <string name="action_settings">About</string>
+
+    <string name="used">Used</string>
+    <string name="free">Free</string>
+    <string name="total">Total</string>
+    <string name="free_space">393.89 MB</string>
+    <string name="ad_id_interstitial">ca-app-pub-6008099628983320/8430894693</string>
+    <string name="ad_id_banner">ca-app-pub-6008099628983320/1318337492</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+</resources>
