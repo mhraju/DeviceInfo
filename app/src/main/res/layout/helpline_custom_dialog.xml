@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/leena"
+            />
+
+        <!--  <TextView
+              android:id="@+id/text"
+              android:textSize="16sp"
+              android:text="Dedicated to..."
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />-->
+
+        <TextView
+            android:id="@+id/dedicateTo"
+            android:textSize="14sp"
+            android:text="My Beloved Adorable Sweetheart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/dedicateName"
+            android:textSize="16sp"
+            android:text="Marufa Akter Leena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

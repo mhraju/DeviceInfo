@@ -27,7 +27,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:src="@drawable/battery"
-        android:layout_marginTop="48dp" />
+        android:layout_marginTop="36dp" />
 
     <TextView
         android:id="@+id/battery_level"
@@ -37,7 +37,7 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -48,7 +48,7 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -60,7 +60,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_below="@+id/voltage_level"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true" />
 
 </LinearLayout>

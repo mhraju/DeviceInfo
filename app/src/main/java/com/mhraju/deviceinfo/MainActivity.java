@@ -1,7 +1,9 @@
 package com.mhraju.deviceinfo;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -12,6 +14,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.util.TypedValue;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -23,6 +26,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import android.support.v4.app.FragmentManager;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
@@ -56,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private TabLayout tabLayout;
     private Menu menu;
     private String[] pageTitle = {"Device", "OS", "Screen", "Memory", "Battery"};
+    private TextView tv1,tv2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,18 +137,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         });*/
 
-        /*fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                showIntAdd();
-
-            }
-        });
-
-        mInterstitialAd = createNewIntAd();
-        loadIntAdd();*/
 
 
     }
@@ -284,6 +278,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         .setPositiveButton("OK", null)
                         .show();
                 return true;
+
+            case R.id.dedicate:
+                getDedication();
+               /* new AlertDialog.Builder(this)
+                        .setTitle("Dedicated to...")
+                        .setMessage(
+                                "Email : technerds1993@gmail.com\n\n" +
+                                        "Blog : https://mhraju.github.io\n")
+                        .setPositiveButton("OK", null)
+                        .show();*/
+                return true;
 /*
             case R.id.create_new_pattern:
                 Intent intent = new Intent(MainActivity.this, ChangeActivity.class);
@@ -297,6 +302,36 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
+    public void getDedication() {
+        android.support.v7.app.AlertDialog.Builder dialogBuilder = new android.support.v7.app.AlertDialog.Builder(this);
+        LayoutInflater inflater = this.getLayoutInflater();
+        final View dialogView = inflater.inflate(R.layout.helpline_custom_dialog, null);
+
+
+        dialogBuilder.setView(dialogView);
+
+        tv1=(TextView)dialogView.findViewById(R.id.dedicateTo);
+        tv2=(TextView)dialogView.findViewById(R.id.dedicateName);
+
+       /* Typeface face= Typeface.createFromAsset(getAssets(), "SolaimanLipi.ttf");
+        tv1.setTypeface(face);
+
+        Typeface face1= Typeface.createFromAsset(getAssets(), "SolaimanLipi.ttf");
+        tv2.setTypeface(face1);
+*/
+        dialogBuilder.setTitle("Dedicated to...");
+
+        //dialogBuilder.setMessage("Enter text below");
+        dialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                //do something with edt.getText().toString();
+            }
+        });
+
+
+        android.support.v7.app.AlertDialog b = dialogBuilder.create();
+        b.show();
+    }
 
    /* @SuppressWarnings("StatementWithEmptyBody")
 

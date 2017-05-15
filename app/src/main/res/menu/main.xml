@@ -21,6 +21,15 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
 
             >
+
+            <item
+                android:id="@+id/dedicate"
+                android:orderInCategory="100"
+                android:title= "Devotion"
+                android:icon="@drawable/heart"
+                app:showAsAction="always"
+                />
+
             <item
                 android:id="@+id/about"
                 android:orderInCategory="100"
@@ -28,6 +37,9 @@
                 android:icon="@drawable/helpbutton"
                 app:showAsAction="always"
                 />
+
+
+
 
 
         </menu>
